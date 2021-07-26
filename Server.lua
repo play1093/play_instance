@@ -50,7 +50,7 @@ AddEventHandler('playerDropped', function ()
 
 	for i = 1, #play_players, 1 do
 		if play_players[i].id == nombre then
-			table.remove(play_players[i])
+			table.remove(play_players, i)
             print(play_players[i])
             print("Lo he borrado")
 		end
