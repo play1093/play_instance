@@ -26,11 +26,11 @@ RegisterCommand(Config.Command, function(source, args, raw)
     local id = tonumber(args[1])
     local state = tonumber(args[2])
     TriggerServerEvent("play_instance:instance", id, state)
-end, false)
+end, true)
 
 RegisterCommand("player_instances", function(source, args, rawCommand)
 	StateMenu()
-end, false)
+end, true)
 
 --===============================================
 --==                 FUNCTIONS                 ==
